@@ -11,10 +11,10 @@ DECLARE @Empresa AS TABLE(
  fechaInicio date
  )
 
- ---Tabla Comun para ejecucion, aqui creo la tabla. Teniendo en cuenta cualquier requierimiento nuevo
- -- se puede agregar cambiar gerente id por idDepartamento y idDepartamento por idSubdepartamento
- --hay que tener en cuenta que la relacion recursiva es comparada con ella misma
- --en todo caso dependiendo del requerimiento este se puede enfocar.
+ ---Tabla Comun para ejecucion, aqui creo la tabla. Teniendo en cuenta cualquier requierimiento nuevo.
+ -- se puede agregar cambiar gerente id por idDepartamento e idDepartamento por idSubdepartamento.
+ --hay que tener en cuenta que la relacion recursiva es comparada con ella misma.
+ --en todo caso dependiendo del requerimiento este se puede enfocar cambiado los valores, aqui una muestra con una llave primaria.
 
 create table Empresa (
  gerenteId INT primary key not null,--id comun, se puede representar como id de empresa
@@ -37,7 +37,6 @@ VALUES(1 , NULL , 'INGENIERIA','juan manuel','3168102927','19900415','20200910')
     , (7 , 1 , 'ARQUITECTURA DE SOFTWARE','miguel','314654272','19960604','20150603')
     , (8 , 1 , 'OPTIMIZACION CODIGO','jose alfaro','36451874','19980302','20200506')
     , (9 , 3 , 'UNITARIAS','steven','33164577','19980419','20200306')
-	, (10 ,1 , 'CIVIL','aroldy','3212346212','19800816','20200419')
 	, (10 ,1 , 'CIVIL','aroldy','3212346212','19800816','20200419')
 
 
